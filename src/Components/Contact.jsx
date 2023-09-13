@@ -1,11 +1,18 @@
+import { useNavigation } from 'react-router-dom'
 import Wrapper from '../Wrapper/Contact'
-import avatar from '../assets/contact.svg'
+// import avatar from '../assets/contact.svg'
 import { FaHandsHelping } from 'react-icons/fa'
 
 const Contact = () => {
+  const navigation = useNavigation()
+  console.log(navigation)
   return (
     <Wrapper>
-      <img src={avatar} alt='avatar-img' className='avatar' />
+      <img
+        src='https://res.cloudinary.com/dshhmplrj/image/upload/v1694604816/contact_owl0wg.svg'
+        alt='avatar-img'
+        className='avatar'
+      />
       <h4>
         Thank you for taking the time to reach out.
         <FaHandsHelping className='hand-shake' />
