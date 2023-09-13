@@ -1,17 +1,11 @@
 import Wrapper from '../Wrapper/Contact'
 import { FaHandsHelping } from 'react-icons/fa'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+import contactAvatar from '../assets/contact.svg'
 
 const Contact = () => {
   return (
     <Wrapper>
-      <LazyLoadImage
-        src='https://res.cloudinary.com/dshhmplrj/image/upload/v1694604816/contact_owl0wg.svg'
-        effect='blur'
-        className='avatar'
-        alt='avatar-img'
-        placeholderSrc='LOADING...'
-      />
+      <img src={contactAvatar} className='avatar' alt='avatar-img' />
       <h4>
         Thank you for taking the time to reach out.
         <FaHandsHelping className='hand-shake' />
