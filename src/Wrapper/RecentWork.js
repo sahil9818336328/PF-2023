@@ -112,14 +112,8 @@ const StyledRecentWorkWrapper = styled.section`
           gap: 1rem;
           margin-top: 2rem;
 
-          .btn {
-            width: 130px;
-
-            @media screen and (max-width: 400px) {
-              padding: 0.5rem;
-              font-size: 1rem;
-              width: 115px;
-            }
+          @media screen and (max-width: 400px) {
+            flex-direction: column;
           }
 
           .btn-1 {

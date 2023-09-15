@@ -28,12 +28,12 @@ const RecentWork = () => {
               </p>
               <div className='btn-container'>
                 <a
-                  href='https://github.com/sahil9818336328/MERN-FINAL'
+                  href='https://www.notion.so/JOB-TRACKER-MERN-STACK-7bbda1d00a1849fbbbe6deaf860262f0?pvs=4'
                   className='btn btn-1'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Github
+                  Documentation
                 </a>
                 <a
                   href='https://mern-jobs-track.onrender.com'
