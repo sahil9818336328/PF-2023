@@ -39,6 +39,7 @@ const StyledRecentWorkWrapper = styled.section`
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
       padding-bottom: 3rem;
+      margin-bottom: 3rem;
 
       @media screen and (max-width: 950px) {
         grid-template-columns: 1fr;
@@ -47,7 +48,7 @@ const StyledRecentWorkWrapper = styled.section`
       .project-section-left {
         img {
           width: 100%;
-          height: 300px;
+          height: 220px;
 
           @media screen and (max-width: 950px) {
             display: none;
@@ -89,8 +90,9 @@ const StyledRecentWorkWrapper = styled.section`
 
         .info {
           color: var(--grey-500);
-          line-height: 1.2;
+          line-height: 1.3;
           text-align: left;
+          letter-spacing: 1.5px;
 
           @media screen and (max-width: 950px) {
             text-align: center;
@@ -114,6 +116,12 @@ const StyledRecentWorkWrapper = styled.section`
 
           @media screen and (max-width: 400px) {
             flex-direction: column;
+          }
+
+          .disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+            pointer-events: none;
           }
 
           .btn-1 {

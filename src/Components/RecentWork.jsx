@@ -1,6 +1,7 @@
 import Wrapper from '../Wrapper/RecentWork'
-import projectOne from '../assets/ProjectsImages/project-1.svg'
+// import projectOne from '../assets/ProjectsImages/project-1.svg'
 import { FaFilePdf } from 'react-icons/fa6'
+import { works } from '../constants'
 
 const RecentWork = () => {
   return (
@@ -12,40 +13,44 @@ const RecentWork = () => {
           soon.
         </p>
         <div className='projects'>
-          <div className='project'>
-            <div className='project-section-left'>
-              <img src={projectOne} alt='project-one-image' />
-            </div>
-            <div className='project-section-right'>
-              <h4 className='project-title'>Jobs Tracker</h4>
-              <p className='info'>
-                A simple job tracking software that allows you to perform CRUD
-                operations with proper authentication and server side
-                pagination.
-              </p>
-              <p className='stack'>
-                Built using <span> MERN </span> stack.
-              </p>
-              <div className='btn-container'>
-                <a
-                  href='https://www.notion.so/JOB-TRACKER-MERN-STACK-7bbda1d00a1849fbbbe6deaf860262f0?pvs=4'
-                  className='btn btn-1'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Documentation
-                </a>
-                <a
-                  href='https://mern-jobs-track.onrender.com'
-                  className='btn'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  Visit site
-                </a>
+          {works?.map((project) => {
+            const { id, img, title, description, documentation, url, stack } =
+              project
+
+            return (
+              <div key={id} className='project'>
+                <div className='project-section-left'>
+                  <img src={img} alt='project-image' />
+                </div>
+                <div className='project-section-right'>
+                  <h4 className='project-title'>{title}</h4>
+                  <p className='info'>{description}</p>
+                  <p className='stack'>
+                    Built using <span> {stack} </span>
+                  </p>
+                  <div className='btn-container'>
+                    <a
+                      href={documentation}
+                      className={`btn btn-1 ${!documentation && 'disabled'}`}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {documentation ? 'Documentation' : 'Coming soon...'}
+                    </a>
+                    <a
+                      href={url}
+                      className='btn'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Visit site
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            )
+          })}
+
           <a
             href='https://drive.google.com/file/d/12NphbNXiXXmbCf8VGS0gVI3wHcMcK2G4/view?usp=sharing'
             className='btn linkedin'

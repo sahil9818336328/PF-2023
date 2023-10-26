@@ -13,6 +13,23 @@ const StyledSkillsWrapper = styled.section`
     color: var(--white);
     margin: 0 1rem;
 
+    .carousel {
+      margin-top: 3rem;
+      max-width: 65vw;
+
+      .slick-list {
+        h3 {
+          text-align: center;
+          line-height: 1.2;
+          letter-spacing: 2px;
+        }
+      }
+
+      .slick-dots {
+        bottom: -5rem;
+      }
+    }
+
     h4 {
       letter-spacing: 2px;
       font-size: 2rem;
@@ -48,7 +65,7 @@ const StyledSkillsWrapper = styled.section`
     background-color: var(--white);
     border-radius: var(--border-radius);
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1150px) {
       grid-template-columns: 1fr;
     }
 
@@ -91,6 +108,19 @@ const StyledSkillsWrapper = styled.section`
         letter-spacing: var(--letter-spacing);
         line-height: 1.5;
         text-align: center;
+      }
+
+      .languages {
+        text-align: center;
+        h4 {
+          color: var(--primary-500);
+          font-weight: 500;
+          margin: 2rem 0;
+        }
+        p {
+          margin: 1rem 0;
+          font-size: 1.1rem;
+        }
       }
     }
 
