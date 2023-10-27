@@ -1,3 +1,4 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import Wrapper from '../Wrapper/Companies'
 import fitbotsOkrs from '../assets/CompanyLogos/fitbotsOkrs.svg'
 
@@ -9,7 +10,7 @@ const Companies = () => {
           I&apos;m proud to have worked with some awesome companies:
         </h3>
         <div className='company'>
-          <img src={fitbotsOkrs} alt='fitbotsOkrs' />
+          <LazyLoadImage src={fitbotsOkrs} effect='blur' />
 
           <p className='description'>
             A goal-setting / strategy execution framework.

@@ -104,7 +104,6 @@ const StyledSkillsWrapper = styled.section`
       }
 
       .description {
-        /* width: 20vw; */
         letter-spacing: var(--letter-spacing);
         line-height: 1.5;
         text-align: center;
@@ -143,7 +142,7 @@ const StyledSkillsWrapper = styled.section`
       }
     }
 
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: 1150px) {
       .service-one {
         border-top-right-radius: var(--border-radius);
         border-bottom-left-radius: 0;
