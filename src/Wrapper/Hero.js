@@ -9,6 +9,17 @@ const StyledHeroWrapper = styled.section`
     align-items: center;
     justify-content: center;
 
+    > div {
+      margin: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    div {
+      canvas {
+        border-radius: 1rem;
+      }
+    }
+
     h3 {
       color: #141c3a;
       font-size: 2rem;

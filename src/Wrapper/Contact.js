@@ -10,6 +10,13 @@ const StyledContactWrapper = styled.div`
     margin-top: 0;
   }
 
+  > div {
+    margin-top: -6rem;
+    canvas {
+      border-radius: 1rem;
+    }
+  }
+
   .avatar {
     margin-top: -6rem;
 

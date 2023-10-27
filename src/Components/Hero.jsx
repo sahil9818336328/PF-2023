@@ -33,8 +33,8 @@ const Hero = () => {
           src={avatar}
           className='avatar-img'
           alt='avatar-img'
-          width={117}
-          height={117}
+          width={172}
+          height={172}
           hash='LdM@A=oe_JWC?jj]M-axf;ayRNoe'
         />
         <ImageComponent
