@@ -51,16 +51,18 @@ const StyledHeroWrapper = styled.section`
     }
 
     .avatar-img {
+      margin: 0 auto;
       margin-top: 4rem;
-      width: 15%;
+      width: 9vw;
       min-width: 70px;
       display: block;
     }
 
     .hero-img {
+      margin: 0 auto;
       margin-top: 4rem;
       width: 50%;
-      min-width: 250px;
+      min-width: 280px;
       margin-bottom: 1rem;
       display: block;
     }

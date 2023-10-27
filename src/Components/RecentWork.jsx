@@ -2,6 +2,7 @@ import Wrapper from '../Wrapper/RecentWork'
 // import projectOne from '../assets/ProjectsImages/project-1.svg'
 import { FaFilePdf } from 'react-icons/fa6'
 import { works } from '../constants'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const RecentWork = () => {
   return (
@@ -20,7 +21,8 @@ const RecentWork = () => {
             return (
               <div key={id} className='project'>
                 <div className='project-section-left'>
-                  <img src={img} alt='project-image' />
+                  {/* <img src={img} alt='project-image' /> */}
+                  <LazyLoadImage src={img} effect='blur' />
                 </div>
                 <div className='project-section-right'>
                   <h4 className='project-title'>{title}</h4>

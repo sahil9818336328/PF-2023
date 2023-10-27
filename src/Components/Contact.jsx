@@ -1,11 +1,19 @@
 import Wrapper from '../Wrapper/Contact'
 import { FaHandsHelping } from 'react-icons/fa'
 import contactAvatar from '../assets/contact.svg'
+import ImageComponent from './ImageComponent'
 
 const Contact = () => {
   return (
     <Wrapper>
-      <img src={contactAvatar} className='avatar' alt='avatar-img' />
+      <ImageComponent
+        src={contactAvatar}
+        alt='avatar-img'
+        className='avatar'
+        width={722}
+        height={364}
+        hash='L9Q]ykDm00_H_NxpM{V}9D?Y%44r'
+      />
       <h4>
         Thank you for taking the time to reach out.
         <FaHandsHelping className='hand-shake' />

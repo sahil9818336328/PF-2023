@@ -4,6 +4,7 @@ import hero from '../assets/hero.svg'
 import avatar from '../assets/avatar.svg'
 import { useGlobalContext } from '../context'
 import { Link } from 'react-router-dom'
+import ImageComponent from './ImageComponent'
 
 const Hero = () => {
   const { showMenu, setShowMenu } = useGlobalContext()
@@ -27,8 +28,23 @@ const Hero = () => {
           A web developer who is making the Internet a more beautiful and
           positive place!
         </p>
-        <img src={avatar} alt='avatar' className='avatar-img' />
-        <img src={hero} alt='hero-image' className='hero-img' />
+
+        <ImageComponent
+          src={avatar}
+          className='avatar-img'
+          alt='avatar-img'
+          width={117}
+          height={117}
+          hash='LdM@A=oe_JWC?jj]M-axf;ayRNoe'
+        />
+        <ImageComponent
+          src={hero}
+          alt='hero-img'
+          className='hero-img'
+          width={560}
+          height={322}
+          hash='LRF5eFRFO;x%Iia9$]X3y0V_NLR:'
+        />
       </div>
     </Wrapper>
   )
