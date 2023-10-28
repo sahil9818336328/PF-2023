@@ -21,7 +21,8 @@ export const works = [
     description:
       'Fully functional e-commerce site with checkout and payment functionality using stripe.',
     stack: 'React, Stripe, Netlify',
-    documentation: '',
+    documentation:
+      'https://www.notion.so/E-COMMERCE-42aa4cb0edd34176a6e8ba6154f7d20d?pvs=4',
     url: 'https://e-commerce-auth0-stripe-2021.netlify.app/',
   },
   {
