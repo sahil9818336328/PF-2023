@@ -120,15 +120,12 @@ const UserInfo = () => {
           />
           <div className='title'>Currently Learning</div>
           <p className='description '>
-            Currently, I&apos;m dedicated to mastering Data Structures and
-            Algorithms (DSA).
+            Full-stack with Node and Express, building the web one line of code
+            at a time.
           </p>
           <div className='languages'>
-            <h4>Content covered so far:</h4>
-            <p>Big O</p>
-            <p>Problem solving patterns</p>
-            <p>Searching</p>
-            <p>Sorting (on-going) </p>
+            <h4>Projects build so far:</h4>
+            <p>Jobs Tracker</p>
           </div>
         </div>
       </div>
